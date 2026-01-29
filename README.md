@@ -49,14 +49,13 @@ webhook-repo/
 ---
 
 ## ⚙️ Setup Instructions
-
-### 1️⃣ Clone the Repository
-
 ```bash
+##1️⃣ Clone the Repository
+
 git clone https://github.com/Mani9505764142/webhook-repo.git
 cd webhook-repo
 
-### 2️⃣ Create Virtual Environment & Install Dependencies
+##2️⃣ Create Virtual Environment & Install Dependencies
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
