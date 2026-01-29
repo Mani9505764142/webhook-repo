@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Events</title>
+    <meta http-equiv="refresh" content="15">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .event {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Latest GitHub Events</h2>
+<p>Auto refreshes every 15 seconds</p>
+
+{% for e in events %}
+<div class="event">
+    <strong>{{ e.author }}</strong>
+    {{ e.action }}
+    from <strong>{{ e.from_branch }}</strong>
+    to <strong>{{ e.to_branch }}</strong><br>
+    <small>{{ e.timestamp }}</small>
+</div>
+{% endfor %}
+
+</body>
+</html>
